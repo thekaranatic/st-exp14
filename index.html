@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <title>Phone</title>
+		<script type="text/javascript" src="public.js"></script>
+        <style>
+			@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@350&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap');
+
+
+
+			body{
+				color: white;
+				font-family: 'Rubik', sans-serif;
+			}
+			h1{
+				text-align: left;
+				position: relative;
+				left: 74px;
+				font-family: 'Inter', sans-serif;
+				font-size: 50px;
+			}
+
+			input{
+				padding: 1px;
+				border: none;
+				border-radius: 2px;
+				color: rgb(0, 0, 0);
+				font-family: 'Rubik', sans-serif;
+				font-size: 20px;
+			}
+
+			div{
+				position: absolute;
+				position: fixed;
+				left: 0px;
+				right: 0px;
+				top: 0px;
+				bottom: 0px;
+
+				width: 30%;
+				height: 350px;
+
+				align-items: center;
+				display: inline-block;
+				background: rgb(7, 6, 6);
+				margin: auto;
+				padding: 50px;
+				border: none;
+				border-radius: 6px;
+				box-shadow: 5px 10px 70px #363531;
+				backdrop-filter: blur(1rem);
+			}
+            #smit{
+                margin-top: 20px;
+				margin-right: 10px;
+				margin-left: 1px;
+				width: 100%;
+				background-color: rgb(29, 122, 29);
+				color: white;
+				padding: 5px;
+            }
+			#rst{
+				margin-top: 20px;
+				margin-left: 10px;
+				margin-right: 3px;
+				width: 90%;
+				padding: 5px;
+				background-color: rgb(238, 54, 54);
+				color: white;
+			}
+		</style>
+    </head>
+
+    <body>
+        <center>
+			<div>
+                   <h1>LogIn</h1>
+                   <table>
+                    <tr>
+						<td>Name:</td>
+						<td><input autofocus type="text" name="uname" id="uname"/>
+					</tr>
+                    <tr>
+                        <td>Ph. No.:</td>
+                        <td><input type="text" name="phno" id="phno"></td>
+                    </tr>
+                    <tr>
+						<td>Password</td>
+						<td><input type="password" name="pswd" id="pswd"></td>
+					</tr>
+                    <tr>
+                        <td><input type="submit" value="SUBMIT" id="smit" onclick="end()"></td>
+                        <td><input type="reset" value="RESET" id="rst"></td>
+                    </tr>
+                   </table> 
+            </div>
+		</center>
+    </body>
+</html>
